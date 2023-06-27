@@ -1,40 +1,95 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>Loja de Tênis</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <h1 class="logo">Loja de Tênis</h1>
-      <div class="search-bar">
-        <input type="text" class="search-input" placeholder="Pesquisar">
-        <button class="search-button">Buscar</button>
-      </div>
-    </header>
-    <section class="shoes-section">
-      <div class="shoes-container">
-        <div class="shoe">
-          <img src="https://imgnike-a.akamaihd.net/1920x1920/0224057T.jpg"Tênis 1">
-          <h3>Tênis Air Jordan 11 Retro Masculino</h3>
-          <p>R$ 1239,99</p>
-        </div>
-        <div class="shoe">
-          <img src="https://imgnike-a.akamaihd.net/1920x1920/023577ID.jpg"Tênis 2">
-          <h3>AIR JORDAN 1 RETRO LOW OG EX</h3>
-          <p>R$ 909,99
-</p>
-        </div>
-        <div class="shoe">
-          <img src="https://imgcentauro-a.akamaihd.net/900x900/M0W8QN01/tenis-nike-air-jordan-xxxvii-low-adulto-img.jpg" alt="Tênis 3">
-          <h3>Tênis Nike Air Jordan XXXVII Low - Adulto</h3>
-          <p>R$ 1.699,99</p>
-        </div>
-      </div>
-    </section>
-    <!-- Restante do conteúdo da página -->
-  </div>
-</body>
-</html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  max-width: 400px;
+  display: flex;
+}
+
+.search-input {
+  flex-grow: 1;
+  
+  border: 1px solid;
+  color:rgba(0, 0, 0, 0.178);
+  margin-right: px;
+  height:20px;
+  width: 300px;
+  margin-right: 80px;
+
+}
+
+.shoes-section {
+  margin-top: 40px;
+}
+
+.shoes-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoe {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.shoe img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.shoe h3 {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.shoe p {
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.logo img {width: 60%;
+height: 20%;}
+.menu-bar {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f2f2f2;
+    padding: 10px;
+}
+
+.menu-button {
+    background-color: #4CAF50;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    background-color: #00BF63;
+}
+.menu-bar {
+  color: #00BF63;
+}
